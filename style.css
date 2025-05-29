@@ -3,46 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    transform-style: preserve-3d;
-}
 
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotateX(60deg);
 }
 
 #tableWrapper{
     width: 20%;
-    height:100vh;
+    height:fit-content;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     >div{
         width: auto;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
+        height: 150px;
     }
+}
+.hit{
+    border: solid black 1px;
+    border-radius: 50%;
+    height: 50px;
 }
 
 .fret{
-    height: 10px;
-    border: solid black 1px;
+    border: 1px, solid, black;
 }
 
-.wrap-original-transform {
-    max-width: 800px;
-    margin: auto;
-  height: 100vh;
-  perspective: 500px;
-  transform-style: preserve-3d;
-  position: relative;
-}
-
-.original-transform {
-  transform: rotateX(60deg);
-  position: relative;
-  top: -200px;
-}
