@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    transform-style: preserve-3d;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateX(60deg);
+}
+
+#tableWrapper{
+    width: 20%;
+    height:100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    >div{
+        width: auto;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.fret{
+    height: 10px;
+    border: solid black 1px;
+}
+
+.wrap-original-transform {
+    max-width: 800px;
+    margin: auto;
+  height: 100vh;
+  perspective: 500px;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.original-transform {
+  transform: rotateX(60deg);
+  position: relative;
+  top: -200px;
+}
