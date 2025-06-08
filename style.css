@@ -1,0 +1,115 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    body {
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      background: url("concert-at-the-mann-courtesy-the-mann-center-2200x1237px.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .container{
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        >canvas{
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+
+    .nav-title {
+      flex: 1;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-right, .nav-left {
+      flex: 0 0 auto;
+    }
+
+    .nav-right a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #game-container {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 60px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    canvas {
+      border: 2px solid rgba(255,255,255,0.5);
+    }
+
+    .hud-box {
+      position: absolute;
+      background: rgba(0,0,0,0.6);
+      padding: 10px 15px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+
+    #score-box {
+      top: 80px;
+      left: 20px;
+    }
+
+    #multiplier-box {
+      top: 80px;
+      right: 20px;
+    }
+
+    .menu-buttons {
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .menu-buttons button {
+      padding: 8px 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #fileInput{
+        padding: 8px 12px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
